@@ -1,0 +1,72 @@
+:root {
+  --main-bg-color: #1a0d2c;
+  --main-text-color: #bba2e9;
+  --text-accent-color: #ebe1ff;
+  --red-accent-color: #c0002a;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: var(--main-text-color);
+}
+
+a {
+  transition: 0.25s;
+}
+
+a:hover {
+  /* color: var(--text-accent-color); */
+  color: var(--red-accent-color);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+body {
+  height: 200vh;
+  background-color: var(--main-bg-color);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+#hero-image {
+  max-width: 100vw;
+  height: 75vh;
+}
+
+#hero-logo {
+  height: 25vh;
+  position: relative;
+  top: 200px;
+  transition: 0.25s;
+}
+
+#hero-logo:hover {
+  filter: drop-shadow(12px 12px 20px var(--red-accent-color));
+  transition: 0.25s;
+}
+
+li {
+  font-size: larger;
+}
+
+#logo-div {
+  position: absolute;
+}
+
+nav {
+  margin: 20px 25% 20px 25%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
