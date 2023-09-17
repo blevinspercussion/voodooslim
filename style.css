@@ -49,6 +49,7 @@
 
 a {
   transition: 0.25s;
+  text-decoration: none;
 }
 
 a:hover {
@@ -74,6 +75,34 @@ article p {
   color: whitesmoke;
   font-family: "Roboto Slab", serif;
   font-size: x-large;
+}
+
+#bio-pics {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.bio-pic {
+  width: 15vw;
+  transition: 0.3s;
+  border-radius: 10px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.bio-pic:hover {
+  width: 20vw;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 body {
@@ -126,7 +155,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  /* background-color: var(--main-bg-color); */
+
   max-height: 70vh;
   overflow: hidden;
 }
@@ -149,6 +179,14 @@ header {
 #hero-logo:hover {
   filter: drop-shadow(12px 12px 20px var(--red-accent-color));
   transition: 0.25s;
+}
+
+#hero-video {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
 li {
