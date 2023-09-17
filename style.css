@@ -18,6 +18,25 @@
   border-radius: 10px;
 }
 
+@keyframes logo-intro {
+  from {
+    top: 2000px;
+  }
+  to {
+    top: 300px;
+  }
+}
+
+@keyframes hero-image-intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -112,7 +131,8 @@ header {
 
 #hero-image {
   width: 100vw;
-  /* height: 75vh; */
+  animation: hero-image-intro;
+  animation-duration: 3s;
 }
 
 #hero-logo {
@@ -120,6 +140,8 @@ header {
   position: relative;
   top: 300px;
   transition: 0.25s;
+  animation-name: logo-intro;
+  animation-duration: 3s;
 }
 
 #hero-logo:hover {
