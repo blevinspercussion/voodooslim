@@ -109,7 +109,10 @@ article p {
   cursor: pointer;
 }
 
-html,
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--main-bg-color);
   overflow-x: hidden;
@@ -215,7 +218,7 @@ li {
   visibility: hidden;
 }
 
-nav {
+nav #desktop-nav {
   margin: 20px 25% 20px 25%;
 }
 
@@ -263,6 +266,9 @@ ul li {
     max-width: 100%;
     overflow-x: hidden;
   }
+  #desktop-header {
+    visibility: hidden;
+  }
   #desktop-nav {
     visibility: hidden;
   }
@@ -286,11 +292,33 @@ ul li {
     max-height: 30vh;
   }
 
-  #mobile-header {
+  .mobile-header {
     visibility: visible;
+    position: sticky;
+  }
+
+  nav {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    top: 10vh;
+    bottom: 100vh;
+    padding-top: 5vh;
+    z-index: 100;
   }
 
   #promo-video {
     max-width: 90vw;
+  }
+  ul {
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    background-color: #1a0d2c;
+    width: 100vw;
+    height: 100vh;
   }
 }
