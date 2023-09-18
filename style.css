@@ -369,8 +369,14 @@ ul li {
     margin: -2rem 0 2rem 0;
   }
 
+  #hero-logo {
+    height: 15vh;
+  }
+
   #logo-div {
-    visibility: hidden;
+    /* visibility: hidden; */
+    animation: none;
+    top: -10vh;
   }
 
   .nav-shown {
