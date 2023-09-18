@@ -318,7 +318,8 @@ ul li {
   }
 
   html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* width: 90vw; */
   }
 
   body {
@@ -360,7 +361,7 @@ ul li {
 
   #hero-video {
     max-height: 30vh;
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
   }
 
