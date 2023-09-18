@@ -59,6 +59,18 @@ a:hover {
   transition: 0.25s;
 }
 
+#about-us-logo {
+  max-height: 25vh;
+}
+
+#about-us-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-height: 25vh;
+  margin-bottom: -10vh;
+}
+
 article {
   max-width: 60vw;
   display: flex;
@@ -97,10 +109,12 @@ article p {
 
 .hidden {
   display: none;
+  transition: 0.5s;
 }
 
 .shown {
   display: block;
+  transition: 0.5s;
 }
 
 .bio-pic:hover {
