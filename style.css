@@ -89,6 +89,21 @@ article p {
   font-size: x-large;
 }
 
+.bio-shown {
+  visibility: visible;
+}
+
+.bio-hidden {
+  visibility: hidden;
+}
+
+#bio-ian {
+  position: relative;
+  max-width: 25vw;
+  bottom: 60vh;
+  left: 30vw;
+}
+
 #bio-pics {
   display: flex;
   align-items: center;
@@ -100,7 +115,6 @@ article p {
   width: 15vw;
   transition: 0.3s;
   border-radius: 10px;
-  position: relative;
 }
 
 #desktop-nav {
@@ -108,7 +122,7 @@ article p {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
   transition: 0.5s;
 }
 
@@ -284,6 +298,19 @@ ul {
 
 ul li {
   padding: 0 40px 0 40px;
+}
+
+.x-icon {
+  max-height: 1rem;
+  max-width: 1rem;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: var(--text-accent-color);
+  align-self: flex-end;
+}
+
+.x-icon:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
