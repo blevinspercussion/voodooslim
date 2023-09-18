@@ -1,27 +1,12 @@
-// Functionality for the About page
-
-let ianPic = document.getElementById("ian-pic");
-let jimPic = document.getElementById("jim-pic");
-let rodPic = document.getElementById("rod-pic");
-let adamPic = document.getElementById("adam-pic");
-
 let hamburgerIcon = document.getElementById("hamburger-icon");
+let navMenu = document.getElementById("nav-menu");
 
-let bioPics = [ianPic, jimPic, rodPic, adamPic];
-
-ianPic.addEventListener("click", (e) => {
-  for (let i = 0; i < bioPics.length; i++) {
-    if (bioPics[i] !== ianPic) {
-      bioPics[i].classList.remove("shown");
-      bioPics[i].classList.add("hidden");
-    }
+hamburgerIcon.addEventListener("click", () => {
+  if (navMenu.classList.contains("nav-hidden")) {
+    navMenu.classList.remove("nav-hidden");
+    navMenu.classList.add("nav-shown");
+  } else if (navMenu.classList.contains("nav-shown")) {
+    navMenu.classList.remove("nav-shown");
+    navMenu.classList.add("nav-hidden");
   }
-});
-
-jimPic.addEventListener("click", () => {});
-
-rodPic.addEventListener("click", () => {});
-
-adamPic.addEventListener("click", () => {
-  console.log("adam clicked");
 });

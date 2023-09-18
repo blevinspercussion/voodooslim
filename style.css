@@ -337,7 +337,7 @@ ul li {
     bottom: 100vh;
     padding-top: 5vh;
     z-index: 100;
-    transition: 0.75s;
+    transition: 2s;
   }
 
   .nav-hidden {
@@ -350,7 +350,7 @@ ul li {
     padding-top: 5vh;
     z-index: 100;
     left: 110vw;
-    transition: 0.75s;
+    transition: 2s;
   }
 
   #promo-video {
