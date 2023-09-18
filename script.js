@@ -5,6 +5,8 @@ let jimPic = document.getElementById("jim-pic");
 let rodPic = document.getElementById("rod-pic");
 let adamPic = document.getElementById("adam-pic");
 
+let hamburgerIcon = document.getElementById("hamburger-icon");
+
 let bioPics = [ianPic, jimPic, rodPic, adamPic];
 
 ianPic.addEventListener("click", (e) => {
