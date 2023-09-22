@@ -17,35 +17,35 @@ let jimXIcon = document.getElementById("jim-x-icon");
 let rodXIcon = document.getElementById("rod-x-icon");
 let adamXIcon = document.getElementById("adam-x-icon");
 
-ianPic.addEventListener("click", (e) => {
-  for (let i = 0; i < bioPics.length; i++) {
-    if (bioPics[i] !== ianPic) {
-      bioPics[i].classList.remove("shown");
-      bioPics[i].classList.add("hidden");
-    }
-    if (bioIan.classList.contains("bio-hidden")) {
-      console.log("clicked");
-      bioIan.classList.remove("bio-hidden");
-      bioIan.classList.add("bio-shown");
-    }
-  }
-});
+// ianPic.addEventListener("click", (e) => {
+//   for (let i = 0; i < bioPics.length; i++) {
+//     if (bioPics[i] !== ianPic) {
+//       bioPics[i].classList.remove("shown");
+//       bioPics[i].classList.add("hidden");
+//     }
+//     if (bioIan.classList.contains("bio-hidden")) {
+//       console.log("clicked");
+//       bioIan.classList.remove("bio-hidden");
+//       bioIan.classList.add("bio-shown");
+//     }
+//   }
+// });
 
-jimPic.addEventListener("click", () => {});
+// jimPic.addEventListener("click", () => {});
 
-rodPic.addEventListener("click", () => {});
+// rodPic.addEventListener("click", () => {});
 
-adamPic.addEventListener("click", () => {
-  console.log("adam clicked");
-});
+// adamPic.addEventListener("click", () => {
+//   console.log("adam clicked");
+// });
 
-ianXIcon.addEventListener("click", () => {
-  for (let i = 0; i < bioPics.length; i++) {
-    if (bioPics[i] !== ianPic) {
-      bioPics[i].classList.remove("hidden");
-      bioPics[i].classList.add("shown");
-    }
-    bioIan.classList.remove("bio-shown");
-    bioIan.classList.add("bio-hidden");
-  }
-});
+// ianXIcon.addEventListener("click", () => {
+//   for (let i = 0; i < bioPics.length; i++) {
+//     if (bioPics[i] !== ianPic) {
+//       bioPics[i].classList.remove("hidden");
+//       bioPics[i].classList.add("shown");
+//     }
+//     bioIan.classList.remove("bio-shown");
+//     bioIan.classList.add("bio-hidden");
+//   }
+// });

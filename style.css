@@ -59,6 +59,12 @@ a:hover {
   transition: 0.25s;
 }
 
+/* #about-us-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
 #about-us-logo {
   max-height: 25vh;
 }
@@ -68,21 +74,26 @@ a:hover {
   align-items: center;
   justify-content: space-evenly;
   max-height: 25vh;
-  margin-bottom: -10vh;
+  margin-top: 10vh;
+  /* margin-bottom: -10vh; */
 }
 
-article {
+#band-bio {
+  margin-top: 25vh;
+}
+
+section {
   max-width: 60vw;
   display: flex;
   flex-direction: column;
   background: black;
   background-color: rgba(19, 0, 33, 0.792);
-  margin-top: 15vh;
+  margin-top: 5vh;
   padding: 15px;
   box-shadow: 45px 30px 0px rgb(0, 0, 0);
 }
 
-article p {
+section p {
   margin: 15px;
   color: whitesmoke;
   font-family: "Roboto Slab", serif;
@@ -108,7 +119,8 @@ article p {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: 25vh;
 }
 
 .bio-pic {
