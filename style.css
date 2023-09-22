@@ -59,12 +59,6 @@ a:hover {
   transition: 0.25s;
 }
 
-/* #about-us-page-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 #about-us-logo {
   max-height: 25vh;
 }
@@ -78,8 +72,10 @@ a:hover {
   /* margin-bottom: -10vh; */
 }
 
-#band-bio {
-  margin-top: 25vh;
+.about-us-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section {
@@ -100,35 +96,6 @@ section p {
   font-size: x-large;
 }
 
-.bio-shown {
-  visibility: visible;
-}
-
-.bio-hidden {
-  visibility: hidden;
-}
-
-#bio-ian {
-  position: relative;
-  max-width: 25vw;
-  bottom: 60vh;
-  left: 30vw;
-}
-
-#bio-pics {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* height: 100vh; */
-  margin-top: 25vh;
-}
-
-.bio-pic {
-  width: 15vw;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
 #desktop-nav {
   visibility: visible;
 }
@@ -143,15 +110,26 @@ section p {
   transition: 0.5s;
 }
 
-.bio-pic:hover {
-  width: 20vw;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 html {
   /* overflow-x: hidden; */
   height: 100%;
+}
+
+.bio-card {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+
+.bio-pic {
+  height: 40vh;
+}
+
+.bio-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 body {
@@ -244,7 +222,8 @@ header {
 }
 
 hr {
-  visibility: hidden;
+  /* visibility: hidden; */
+  margin-bottom: 10vh;
 }
 
 li {
