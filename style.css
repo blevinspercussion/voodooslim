@@ -352,6 +352,10 @@ ul li {
     /* width: 90vw; */
   }
 
+  .bio-pic {
+    height: 15vh;
+  }
+
   body {
     max-width: 100%;
     overflow-x: hidden;
