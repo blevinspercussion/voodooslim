@@ -138,6 +138,15 @@ body {
   height: 100%;
 }
 
+#calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 35vw 0 35vw;
+  /* max-width: 50vw; */
+}
+
 .cards-div {
   display: flex;
   flex-direction: row;
@@ -168,6 +177,35 @@ body {
 
 #hamburger-icon {
   visibility: hidden;
+}
+
+.gig-content {
+  /* margin-bottom: 1rem; */
+}
+
+.gig-description {
+  margin-top: 1rem;
+}
+
+.gig-date {
+  border: 1px solid var(--text-accent-color);
+  padding: 1rem;
+  margin: 1rem 1rem 0 0;
+  color: var(--text-accent-color);
+  display: flex;
+}
+
+.gig-div {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.gig-hr {
+  margin: 2rem 0 2rem 0;
+}
+
+.gig-title {
+  color: var(--red-accent-color);
 }
 
 header {
@@ -224,6 +262,7 @@ header {
 hr {
   /* visibility: hidden; */
   margin-bottom: 10vh;
+  min-width: 50%;
 }
 
 li {
