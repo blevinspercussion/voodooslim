@@ -357,6 +357,28 @@ ul li {
     overflow-x: hidden;
   }
 
+  .calendar {
+    margin: none;
+  }
+
+  .gig-date {
+    margin-bottom: 1rem;
+  }
+
+  .gig-div {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gig-description {
+    display: none;
+  }
+
+  .gig-div p {
+    font-size: smaller;
+  }
+
   .social-icon {
     visibility: hidden;
   }
@@ -437,6 +459,14 @@ ul li {
 
   #promo-video {
     max-width: 90vw;
+  }
+
+  section {
+    max-width: 100vw;
+  }
+
+  section p {
+    font-size: smaller;
   }
 
   .social-icon-div {
